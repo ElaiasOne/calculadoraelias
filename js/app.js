@@ -20,8 +20,8 @@ function init (){
     var ocho = document.getElementById('ocho');
     var nueve = document.getElementById('nueve');
     var cero = document.getElementById('cero'); 
-}
 
+    
 uno.onclick = function(e){
     resultado.textContent = resultado.textContent  + "1";
 }
@@ -79,18 +79,21 @@ igual.onclick = function(e){
     numero2 = resultado.textContent;
     resolver();
 }
+}
+
 
 function limpiar(){
     resultado.textContent = "";
   }
-  function resetear(){
+
+function resetear(){
     resultado.textContent = "";
     numero1 = 0;
     numero2 = 0;
     operacion = "";
   }
 
-  function resolver(){
+function resolver(){
     var res = 0;
     switch(operacion){
       case "+":
